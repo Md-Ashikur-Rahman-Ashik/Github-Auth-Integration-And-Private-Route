@@ -19,6 +19,16 @@ const Navbar = () => {
       <NavLink to="/register">
         <button className="btn">Register</button>
       </NavLink>
+      {user && (
+        <>
+          <NavLink to="/orders">
+            <button className="btn">Orders</button>
+          </NavLink>
+          <NavLink to="/profile">
+            <button className="btn">Profile</button>
+          </NavLink>
+        </>
+      )}
     </>
   );
 
